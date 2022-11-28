@@ -1,0 +1,73 @@
+body{
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0;
+    background-color: #c0c0c0;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+main #container{
+    height: fit-content;
+    width: 40%;
+    margin: 20px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+main #container .parImage{
+    height: fit-content;
+    margin-top: -10px;
+}
+
+main #container img{
+    width: 100%;
+    height: auto;
+    border: 1px solid silver;
+    cursor: pointer;
+    
+    
+}
+
+main #startGame{
+    padding: 10px;
+    border: none;
+    background-color: rgba(72, 12, 182, 0.616);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+main .footer{
+    display: block;
+}
+
+main .footer .times{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .footer .times span{
+    color: crimson;
+}
+@media screen and (max-width:750px) {
+    body{
+        overflow: hidden;
+    }
+
+    main #container{
+        width: 90%;
+        margin: 40px auto;
+    }
+}
